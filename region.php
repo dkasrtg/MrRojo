@@ -1,5 +1,5 @@
 <?php 
-    require_once('fonction.php');
+    require_once('./inc/fonction.php');
     $_idp = $_GET['idp'];
     $regions = getRegionsByProvince($idp);
 ?>
