@@ -13,6 +13,18 @@ function getAllProvince()
     return $liste;
 }
 
+// Pour avoir un province par son Id
+function getProvinceById($idProvince)
+{
+    $provinces = getAllProvince();
+    foreach ($provinces as $province) {
+        if ($province["idProvince"] == $idProvince) {
+            return $province;
+        }
+    }
+    return null;
+}
+
 function getAllRegion()
 {
     $regions[] = ["idRegion" => 1, "idProvince" => 1, "nom" => "Analamanga", "population" => 230];
