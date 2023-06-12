@@ -1,18 +1,29 @@
 ul {
+    width: 25%;
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
 li {
-    padding: 5px;
+    padding: 10px;
     background-color: #f2f2f2;
     border-bottom: 1px solid #ddd;
 }
+
 body{
-    width: 75%;
     margin: auto;
 }
+
 body h1{
     text-align: center;
+}
+a{
+    padding-inline: 12pt;
+    padding-block: 2pt;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    border-radius: 12pt;
+    float: right;
 }
