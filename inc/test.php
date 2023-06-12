@@ -4,6 +4,6 @@
 
 include "./fonction.php";
 
-$regions = getRegionsByProvince(2);
+$province = getProvinceById(1);
 
-print_r($regions);
+print_r($province);
