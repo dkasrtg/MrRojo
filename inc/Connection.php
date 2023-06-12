@@ -9,13 +9,13 @@ function getConnectionPostgres()
     $password = 'postgres'; // Mot de passe PostgreSQL
 
     // Connexion à la base de données
-    try {
-        $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
-        
-    } catch (Exception $e) {
-        echo "Erreur : " . $e->getMessage();
-    }
+    $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 
+    if (!$conn) {
+        echo "Erreur lors de la connection !";
+    } else {
+        return $conn;   
+    }
 }
 
 echo getConnectionPostgres();
