@@ -1,7 +1,8 @@
 <?php 
     require_once('./inc/fonction.php');
-    $_idp = $_GET['idp'];
-    $regions = getRegionsByProvince($idp);
+    $_idp = $_GET['id'];
+
+    $regions = getRegionsByProvince($_idp);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +26,8 @@
         <tbody>
             <?php for($i = 0 ; $i < count($regions) ; $i++) {?>
             <tr>
-                <td><?= $regions['nom']?></td>
-                <td><?= $regions['population']?></td>
+                <td><?= $regions[$i]['nom']?></td>
+                <td><?= $regions[$i]['population']?></td>
             </tr>
             <?php } ?>
         </tbody>
