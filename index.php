@@ -16,7 +16,7 @@
 
     <ul>
       <?php foreach($provinces as $province){ ?>
-        <li><span><?= $province['nom']?></span><a href="region.php?id="<?= $province['idProvince']?>>Details</a></li>
+        <li><span><?= $province['nom']?></span><a href="region.php?id=<?= $province['idProvince']?>">Details</a></li>
       <?php } ?>
     </ul>
 
