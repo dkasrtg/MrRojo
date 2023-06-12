@@ -1,0 +1,17 @@
+div {
+    width: fit-content;
+    height: fit-content;
+    margin: auto; 
+    text-align: center;
+    font-family: Arial;
+}
+th,td {
+    width: 200px;
+}
+thead {
+    background-color: rgb(198, 208, 208);
+}
+tbody {
+    color: white;
+    background-color: rgb(128, 129, 131);
+}
